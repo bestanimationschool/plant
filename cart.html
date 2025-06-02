@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container-fluid {
+            max-width: 100% !important;
+        }
+
+        .container {
+            max-width: 1600px !important;
+        }
+
+        .navbar-brand img {
+            max-width: 150px !important;
+        }
+
+        .fixed-top {
+            top: -5px;
+        }
+
+
+        .nav-item a,
+        .dropdown-item {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #178530;
+        }
+
+        .nav-link {
+            margin: 0 14px;
+        }
+
+        .btn-success {
+            background: none;
+            border: none;
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #178530;
+            margin: 0 20px -7px 0;
+        }
+
+
+        .dropdown-menu.show {
+            margin-top: 20px;
+        }
+
+        .modal-content {
+            background-color: #ebf6e6;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            color: #fff;
+            background-color: #178530;
+        }
+
+        .login-btn,
+        .signup-btn {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #178530;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 20px;
+            transition: 0.4s;
+        }
+
+        .login-btn:hover,
+        .signup-btn:hover {
+            background-color: #fff;
+            color: #178530;
+            box-shadow: 0px 2px 5px rgba(9, 5, 4, 0.3);
+        }
+
+        .cart ul li {
+            list-style-type: none;
+            margin: 0 30px -6px 10px;
+        }
+
+        .cart i {
+            font-size: 22px;
+            color: #178530;
+        }
+
+        .alcart {
+            margin-top: 60px;
+        }
+
+        .nav-search input {
+            width: 350px;
+            height: auto;
+            padding: 3px 10px;
+            border: 2px solid #0b8728;
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-search input::placeholder {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+
+        .modal-header h1 {
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #178530;
+        }
+
+        .form-label {
+            font-family: "poppins", serif;
+            font-size: 17px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .form-text,
+        .input-group-text {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .form-check-label {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .section-1 h6 {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .section-2 h2 {
+            font-family: "poppins", serif;
+            font-size: 25px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+
+
+        .star {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .star i {
+            color: rgb(255 193 7);
+        }
+
+        .prize {
+            font-family: "poppins", serif;
+            font-size: 25px;
+            font-weight: 500;
+            display: block;
+            margin: 10px 0;
+            color: #178530;
+        }
+
+        .prize del {
+            color: darkgray;
+        }
+
+        .section-2 h6 {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .select-btn {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: transparent;
+            color: #178530;
+            padding: 5px 20px;
+            border: 2px solid #178530;
+            border-radius: 10px;
+        }
+
+        .select-btn:hover {
+            border: 2px solid #9ad217;
+        }
+
+
+        .color-circle,
+        .color-circle-2,
+        .color-circle-3 {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #F5F5DC;
+            border: 1px solid #ddd;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .color-circle-2 {
+            background-color: #df3592;
+        }
+
+        .color-circle-3 {
+            background-color: #e53212;
+        }
+
+        .quantity-btn {
+            border: none;
+            background: #178530;
+            color: #fff;
+            padding: 2px 10px;
+            font-size: 25px;
+            font-weight: 700;
+            border-radius: 5px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        #quantity {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .colors {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 15px 0;
+            display: block;
+        }
+
+        .cart-btn {
+            width: 300px;
+            height: 45px;
+            background-color: #178530;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.4s;
+        }
+
+        .cart-btn:hover,
+        .buy-btn:hover,
+        .pin-btn:hover {
+            color: #178530;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .buy-btn {
+            width: 450px;
+            height: 45px;
+            background-color: #178530;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .form-label-2 {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .input-group input {
+            border: 1px solid #333;
+        }
+
+        .pin-btn {
+            background-color: #178530;
+            color: #fff;
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 0 10px 10px 0;
+            border: none;
+        }
+
+        .accordion-header h5 {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .accordion-header i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .accord-inner {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        /*cart offcanvas code*/
+
+        .offcanvas-title {
+            font-family: "poppins", serif;
+            font-size: 35px;
+            font-weight: 500;
+            color: #178530;
+            text-transform: uppercase;
+        }
+
+        .offcanvas-body strong {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .prize-2 strong {
+            color: #333;
+            font-size: 20px;
+        }
+
+        .persent,
+        .free-del {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .shipping-btn {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            background-color: #178530;
+            margin-top: 30px;
+            transition: 0.4s;
+        }
+
+        .shipping-btn:hover {
+            color: #178530;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .progress-bar-custom {
+            width: 100%;
+            height: 8px;
+            background-color: #e0e0e0;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 66%;
+            /* 999 out of 1499 */
+            background-color: green;
+            border-radius: 5px;
+        }
+
+        .icon-circle {
+            width: 24px;
+            height: 24px;
+            background: white;
+            border: 2px solid green;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -8px;
+        }
+
+        .icon-left {
+            left: 0;
+        }
+
+        .icon-right {
+            right: 0;
+        }
+
+        .price-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            margin: 30px 0 0 20px;
+            font-weight: 700;
+        }
+
+        .quantity-controls button {
+            border: none;
+            background: #178530;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 6px;
+        }
+
+        .quantity-controls strong {
+            font-size: 25px;
+        }
+
+        .replace {
+            margin-top: 98%;
+        }
+
+        .replace button {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #ebe117 !important;
+            border: none;
+            padding: 8px 10px;
+            width: 100%;
+        }
+
+        .checkout button {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #178530 !important;
+            border: none;
+            padding: 8px 10px;
+            width: 100%;
+            text-transform: uppercase;
+            margin-top: 20px;
+            transition: 0.4s;
+        }
+
+        .checkout button:hover {
+            color: #178530;
+            background-color: #fff !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-product {
+            font-family: "poppins", serif;
+            font-size: 34px;
+            color: #333;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .paragragh {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #178530;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .gallery-1 img {
+            width: 10%;
+            display: block;
+            margin-left: 10px;
+        }
+
+        .based {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #178530;
+            margin: 0 0 -8px 15px;  
+        }
+
+        .write {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #ffffff; 
+            background-color: #178530;
+            text-transform: uppercase;
+            border: none;
+            padding: 3px 20px;
+            transition: 0.4s;
+        }
+
+        .write:hover {
+            color: #178530;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-label {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .form-control {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .form-control::placeholder {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .form-select option {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .btn-form {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #178530;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        .btn-form:hover {
+            color: #178530;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px rgba(9, 5, 4, 0.5);
+        }
+
+        .footer {
+            height: auto;
+            background-color: #333 !important;
+            padding: 50px 0 10px 0;
+        }
+
+        .footer p {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .footer h3 {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .footer ul li {
+            list-style-type: none;
+        }
+
+        .footer ul li a {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer h6 {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .footer span {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            color: #ffffff;
+        }
+
+        .tooltip-custom {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            visibility: hidden;
+        }
+
+        .tooltip-custom img {
+            width: 50px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tooltip-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tooltipText {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        #tooltipPrice,
+        #tooltipTime {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        
+
+        @media (max-width:600px) {
+            .section-1 img {
+                width: 100%;
+            }
+
+            .select-btn {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .cart-btn {
+                font-size: 12px;
+            }
+
+            .buy-btn {
+                width: 100%;
+            }
+
+            .card-title {
+                font-size: 16px;
+            }
+
+            .btn-all-plant {
+                font-size: 16px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background-color: #fff;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 my-2">
+                        <li class="nav-item dropdown">
+                           
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="indoor-plant.html">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="flowring.html">Flowring Plants</a></li>
+                                <li><a class="dropdown-item" href="low-main.html">Low Maintenence Plants</a></li>
+                                <li><a class="dropdown-item" href="air-pure.html">Air Purifying Plants</a></li>
+                                <li><a class="dropdown-item" href="low-light.html">Low Light Plants</a></li>
+                                <li><a class="dropdown-item" href="cacti.html">Cacti ANd Sacculents</a></li>
+                                <li><a class="dropdown-item" href="hanging.html">Hanging Plants</a></li>
+                                <li><a class="dropdown-item" href="pet-friently.html">Pet Freindly Plants</a></li>
+                                <li><a class="dropdown-item" href="fruit.html">Fruit plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Seeds
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="flower-seed.html">flowers seed</a></li>
+                                <li><a class="dropdown-item" href="vegetable.html">vegetables seeds</a></li>
+                                <li><a class="dropdown-item" href="microgreen.html">microgreen seeds </a></li>
+                                <li><a class="dropdown-item" href="herbs-seed.html">herbs seeds</a></li>
+                                <li><a class="dropdown-item" href="grace.html">tree and grace seeds</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                pots & planters
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="plasticpot.html">Plastic pots</a></li>
+                                <li><a class="dropdown-item" href="ceramic.html">ceramic pots</a></li>
+                                <li><a class="dropdown-item" href="metalpot.html">metal planters</a></li>
+                                <li><a class="dropdown-item" href="wooden.html">wooden planters</a></li>
+                                <li><a class="dropdown-item" href="plantstand.html">plant stands</a></li>
+                                <li><a class="dropdown-item" href="seedling.html">seedling trays</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                plants care
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gardentool.html">garden tools</a></li>
+                                <li><a class="dropdown-item" href="accerceries.html">watering tools & accerssories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-success" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Login&nbsp;<i class="bi bi-person-circle"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Login</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <ul class="p-0 m-0 ">
+                            <li class="mr-1"><a href="cart.html"><i class="bi bi-cart-fill"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 my-3" type="search"
+                                placeholder="Search for plants, seeds and planters ..." aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid alcart">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-1 m-4">
+                            <h6>Home > Shop > Ixora (Rugmini) Plant - Pink</h6>
+                            <img src="images/cart-img-main-2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="section-2 m-5">
+                            <h2>Ixora (Rugmini) Plant - Pink</h2>
+                            <span class="star"><i class="bi bi-star-fill"></i> 4.8 (29 reviews)</span><br>
+                            <span class="prize"><del>₹749</del>&nbsp;&nbsp; ₹599</span>
+                            <h6> select planter</h6>
+                            <a href=""><button class="select-btn">gropot</button></a>
+                            <a href=""><button class="select-btn">krishpot</button></a>
+                            <a href=""><button class="select-btn">grailpot</button></a>
+                            <div class="mb-2">
+                                <span class="colors">COLOR</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="color-circle"></span>
+                                <span class="color-circle-2"></span>
+                                <span class="color-circle-3"></span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <button class="quantity-btn me-2" onclick="updateQuantity(-1)">-</button>
+                                <span id="quantity" class="px-3">1</span>
+                                <button class="quantity-btn ms-2"
+                                    onclick="updateQuantity(1)">+</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="cart-btn" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ADD TO CART</button>
+                            </div>
+                            <button class="buy-btn" data-bs-toggle="modal"data-bs-target="#formModal">buy now</button><br>
+                            <label class="form-label-2">Check Delivery</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter PIN code">
+                                <button class="pin-btn" type="button">CHECK</button>
+                            </div>
+                            <div class="accord mt-5">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseOne">
+                                                <h5><i class="bi bi-droplet-fill"></i> Water on alternate days</h5>
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <span class="accord-inner">Always check your plants before watering, the
+                                                    topsoil should be dry to touch. For succulents allow the potting mix
+                                                    to dry completely before watering again.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                <h5><i class="bi bi-sun-fill"></i> Needs direct sunlight</h5>
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <span class="accord-inner">Place your plant where it has direct access
+                                                    to sunlight. Direct light is when the plant receives yellow sunlight
+                                                    beams for at least 4 to 5 hours in a day.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                <h5><i class="bi bi-emoji-smile-fill"></i> Pet friendly</h5>
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <span class="accord-inner">The plant causes no harm to your pets on
+                                                    contact or ingestion, However, consuming any plants is not
+                                                    beneficial to their health.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col">
+                            <h2 class="about-product">About the Product</h2>
+                            <p class="paragragh">Also known as Jungle Geraniums, Ixoras are small tropical shrubs that will reward you
+                                with beautiful clusters of flowers in bright pink with very little care. Perfect for
+                                balcony gardens, these hardy plants need full sun and not much space to grow. The
+                                flowers bloom in a tight ball-like cluster of tiny blooms that attract butterflies and
+                                bees with their sweet fragrance.</p>
+                                <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid review-again">
+                <div class="container my-4">
+                    <h4 class="fw-bold">Ratings & Reviews</h4>
+                    <div class="d-flex align-items-center">
+                        <h5 class="text-warning fw-bold mb-0">★★★★★</h5>
+                        <span class="based"> 4.79 based on 29 reviews</span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <span class="text-warning">★★★★★</span>
+                                <div class="progress w-50 mx-2">
+                                    <div class="progress-bar bg-success" style="width: 79%;"></div>
+                                </div>
+                                <span class="fw-bold">(23)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-warning">★★★★☆</span>
+                                <div class="progress w-50 mx-2">
+                                    <div class="progress-bar bg-success" style="width: 21%;"></div>
+                                </div>
+                                <span class="fw-bold">(6)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-warning">★★★☆☆</span>
+                                <div class="progress w-50 mx-2">
+                                    <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                </div>
+                                <span class="fw-bold">(0)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-warning">★★☆☆☆</span>
+                                <div class="progress w-50 mx-2">
+                                    <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                </div>
+                                <span class="fw-bold">(0)</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-warning">★☆☆☆☆</span>
+                                <div class="progress w-50 mx-2">
+                                    <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                </div>
+                                <span class="fw-bold">(0)</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gallery-1 d-flex">
+                                <img src="images/review-img-1.avif" class=" img-fluid" alt="Review Image">
+                                <img src="images/review-img-1.avif" class=" img-fluid" alt="Review Image">
+                                <img src="images/review-img-1.avif" class=" img-fluid" alt="Review Image">
+                                <img src="images/review-img-1.avif" class=" img-fluid" alt="Review Image">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex justify-content-between mt-3">
+                        <select class="form-select w-auto fw-bold text-success">
+                            <option selected class="fw-bold text-success">Most Recent</option>
+                            <option value="1" class="fw-bold text-success">Highest Rated</option>
+                            <option value="2" class="fw-bold text-success">Lowest Rated</option>
+                        </select>
+                        <button class="write">Write a review</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <div class="container-fluid footer d-flex align-items-center text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 text-center text-lg-start">
+                        <img src="images/logo-white.png" alt="">
+                        <p class="my-4">Transform your outdoor space with our expert garden services! From design to
+                            maintenance, we
+                            create beautiful, thriving gardens tailored to your vision. Let us bring your dream garden
+                            to life—professional, reliable, and passionate about nature.</p>
+                        <a href="#"><img src="images/whatsapp.png" alt=""></a>
+                        <a href="#"><img src="images/Instagram.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="col-12 offset-lg-1 col-md text-center text-md-start">
+                        <h3>Company</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">services</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3>Our Services</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Garden</a></li>
+                            <li><a href="">Garden Mentanences</a></li>
+                            <li><a href="">Planting Services</a></li>
+                            <li><a href="">Tree Care</a></li>
+                            <li><a href="">Irrigation Services</a></li>
+                            <li><a href="">Speciality Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;We're Open</h3>
+                        <h6>Monday to Friday 08.00-04.00</h6>
+                        <h3><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Office Location</h3>
+                        <h6>100 S Main St, New York, NY</h6>
+                        <h3><i class="bi bi-envelope"></i>&nbsp;&nbsp;Send a Message</h3>
+                        <h6>contact@gardyn.com</h6>
+                    </div>
+                    <hr class="my-4">
+                    <span class="text-center">Copyright 2024 - Gardyn by Designesia&nbsp;&nbsp;&nbsp;Term &
+                        Conditon-Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="liginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a href=""><button type="submit" class="login-btn">Submit</button></a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign-up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="signup-btn">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--OFFCANVAS CODE-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+            <div class="text-center mb-3">
+                <strong>ONLY ₹500 MORE TO GET 10% OFF ON YOUR ORDER!</strong>
+            </div>
+            <div class="price-section text-center">
+                <div class="prize-2">
+                    <strong>₹500</strong> <br>
+                    <span class="free-del">FREE DELIVERY</span>
+                </div>
+                <div class="prize-2">
+                    <strong>₹1499</strong> <br>
+                    <span class="persent">10% OFF</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-2">
+                <button class="shipping-btn">Free Shipping</button>
+            </div>
+            <hr>
+            <div class="cart-item">
+                <img src="images/cart-main-img-3.webp" alt="" class="img-fluid">
+                <div>
+                    <strong>Money Plant Variegated With Hanging Pot</strong>
+                    <div class="quantity-controls d-flex justify-content-between">
+                        <button>-</button>
+                        <span class="mx-2">1</span>
+                        <button>+</button>
+                        <strong class="ms-5">₹599</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="replace">
+                <button>Guaranteed replacement of damaged product</button>
+            </div>
+            <div class="checkout">
+               <a href="" data-bs-toggle="modal"data-bs-target="#formModal"><button>checkout-₹599</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- FORM Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">SHOP NOW</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Shipping Address</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter shipping address" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment" class="form-label">Payment Method</label>
+                            <select class="form-select" id="payment" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="credit_card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank_transfer">Bank Transfer</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-form"><i class="bi bi-lock-fill"></i> &nbsp;CLICK TO PAY</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateQuantity(change) {
+            let quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity + change > 0) {
+                quantityElement.textContent = quantity + change;
+            }
+        }
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

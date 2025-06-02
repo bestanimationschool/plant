@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Varela+Round&display=swap');
+
+        .container-fluid {
+            max-width: 100% !important;
+            background-color: #e7f9e6 !important;
+        }
+
+        .container {
+            max-width: 1600px !important;
+        }
+
+
+        .navbar-brand img {
+            max-width: 150px !important;
+        }
+
+        .fixed-top {
+            top: -5px;
+        }
+
+        .nav-item a,
+        .dropdown-item {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #178530;
+        }
+
+        .nav-link {
+            margin: 0 14px;
+        }
+
+        .btn-success {
+            background: none;
+            border: none;
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #178530;
+            margin: 0 20px -7px 0;
+        }
+
+
+        .dropdown-menu.show {
+            margin-top: 20px;
+        }
+
+        .modal-content {
+            background-color: #ebf6e6;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            color: #fff;
+            background-color: #178530;
+        }
+
+        .login-btn,
+        .signup-btn {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #178530;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 20px;
+            transition: 0.4s;
+        }
+
+        .login-btn:hover,
+        .signup-btn:hover {
+            background-color: #fff;
+            color: #178530;
+            box-shadow: 0px 2px 5px rgba(9, 5, 4, 0.3);
+        }
+
+        .cart ul li {
+            list-style-type: none;
+            margin: 0 30px -6px 10px;
+        }
+
+        .cart i {
+            font-size: 22px;
+            color: #178530;
+        }
+
+        .nav-search input {
+            width: 350px;
+            height: auto;
+            padding: 3px 10px;
+            border: 2px solid #0b8728;
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-search input::placeholder {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .map {
+            margin-top: 70px;
+        }
+
+        .cont {
+            background-color: #fff !important;
+        }
+
+        .quote-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .quote-form {
+            background: #ebf6e6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cont form input {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .send-btn {
+            background-color: #0b8728;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .send-btn:hover {
+            color: #0b8728;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .quote-form input::placeholder,
+        .cont textarea::placeholder {
+            font-size: 16px;
+            color: #0b8728;
+            font-weight: 500;
+        }
+
+        .cont textarea {
+            resize: none;
+            height: 170px;
+        }
+
+
+        .modal-header h1 {
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #178530;
+        }
+
+        .form-label {
+            font-family: "poppins", serif;
+            font-size: 17px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .form-text,
+        .input-group-text {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .form-check-label {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .connect {
+            color: #0b8728;
+            background-color: #0b8728 !important;
+            text-align: center;
+        }
+
+        .media {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 30px 0;
+        }
+
+        .media i {
+            color: #0b8728;
+            font-size: 30px;
+            margin: 0 10px;
+        }
+
+        .connect h2 {
+            font-family: "poppins", serif;
+            font-size: 55px; 
+        }
+
+
+        .footer {
+            height: auto;
+            background-color: #333 !important;
+            padding: 50px 0 10px 0;
+        }
+
+        .footer p {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .footer h3 {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .footer ul li {
+            list-style-type: none;
+        }
+
+        .footer ul li a {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer h6 {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .footer span {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            color: #ffffff;
+        }
+
+        .tooltip-custom {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            visibility: hidden;
+        }
+
+        .tooltip-custom img {
+            width: 50px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tooltip-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tooltipText {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        #tooltipPrice,
+        #tooltipTime {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        @media (max-width:600px) {
+            .tooltip-custom {
+                flex-direction: column;
+                align-items: center;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .tooltip-custom img {
+                width: 50px;
+                height: 50px;
+            }
+
+            #tooltipText {
+                font-size: 14px;
+            }
+
+            #tooltipPrice,
+            #tooltipTime {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .card-title {
+                font-size: 16px;
+            }
+
+            .btn-all-plant {
+                font-size: 16px;
+            }
+
+            .map {
+            margin-top: 50px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background-color: #fff;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 my-2">
+                        <li class="nav-item dropdown">
+                           
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="indoor-plant.html">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="flowring.html">Flowring Plants</a></li>
+                                <li><a class="dropdown-item" href="low-main.html">Low Maintenence Plants</a></li>
+                                <li><a class="dropdown-item" href="air-pure.html">Air Purifying Plants</a></li>
+                                <li><a class="dropdown-item" href="low-light.html">Low Light Plants</a></li>
+                                <li><a class="dropdown-item" href="cacti.html">Cacti ANd Sacculents</a></li>
+                                <li><a class="dropdown-item" href="hanging.html">Hanging Plants</a></li>
+                                <li><a class="dropdown-item" href="pet-friently.html">Pet Freindly Plants</a></li>
+                                <li><a class="dropdown-item" href="fruit.html">Fruit plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Seeds
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="flower-seed.html">flowers seed</a></li>
+                                <li><a class="dropdown-item" href="vegetable.html">vegetables seeds</a></li>
+                                <li><a class="dropdown-item" href="microgreen.html">microgreen seeds </a></li>
+                                <li><a class="dropdown-item" href="herbs-seed.html">herbs seeds</a></li>
+                                <li><a class="dropdown-item" href="grace.html">tree and grace seeds</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                pots & planters
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="plasticpot.html">Plastic pots</a></li>
+                                <li><a class="dropdown-item" href="ceramic.html">ceramic pots</a></li>
+                                <li><a class="dropdown-item" href="metalpot.html">metal planters</a></li>
+                                <li><a class="dropdown-item" href="wooden.html">wooden planters</a></li>
+                                <li><a class="dropdown-item" href="plantstand.html">plant stands</a></li>
+                                <li><a class="dropdown-item" href="seedling.html">seedling trays</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                plants care
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gardentool.html">garden tools</a></li>
+                                <li><a class="dropdown-item" href="accerceries.html">watering tools & accerssories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-success" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Login&nbsp;<i class="bi bi-person-circle"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Login</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <ul class="p-0 m-0 ">
+                            <li class="mr-1"><a href="cart.html"><i class="bi bi-cart-fill"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 my-3" type="search"
+                                placeholder="Search for plants, seeds and planters ..." aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid map">
+            <div class="row">
+                <div class="col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112079.3294510267!2d77.32945352553271!3d28.615401376508323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefba5e90939d%3A0x65aebb1058f95144!2sNursery%20Garden!5e0!3m2!1sen!2sin!4v1742464598778!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid cont">
+            <div class="container quote-container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="images/women.jpg" alt="Gardener" class="img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="text-center"><strong>Tell Us Your <span
+                                    style="color: #0b8728;">Message</span></strong>
+                        </h2>
+                        <form class="quote-form">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn send-btn mx-auto">SEND MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid connect py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="media">
+                            <h3>Official Social media</h3>
+                            <h2>Get In Connect.</h2>
+                            <h4 class="mb-4">Follow us and stay connected</h4>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <div class="container-fluid footer d-flex align-items-center text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 text-center text-lg-start">
+                        <img src="images/logo-white.png" alt="">
+                        <p class="my-4">Transform your outdoor space with our expert garden services! From design to
+                            maintenance, we
+                            create beautiful, thriving gardens tailored to your vision. Let us bring your dream garden
+                            to life—professional, reliable, and passionate about nature.</p>
+                        <a href="#"><img src="images/whatsapp.png" alt=""></a>
+                        <a href="#"><img src="images/Instagram.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="col-12 offset-lg-1 col-md text-center text-md-start">
+                        <h3>Company</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">services</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3>Our Services</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Garden</a></li>
+                            <li><a href="">Garden Mentanences</a></li>
+                            <li><a href="">Planting Services</a></li>
+                            <li><a href="">Tree Care</a></li>
+                            <li><a href="">Irrigation Services</a></li>
+                            <li><a href="">Speciality Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;We're Open</h3>
+                        <h6>Monday to Friday 08.00-04.00</h6>
+                        <h3><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Office Location</h3>
+                        <h6>100 S Main St, New York, NY</h6>
+                        <h3><i class="bi bi-envelope"></i>&nbsp;&nbsp;Send a Message</h3>
+                        <h6>contact@gardyn.com</h6>
+                    </div>
+                    <hr class="my-4">
+                    <span class="text-center">Copyright 2024 - Gardyn by Designesia&nbsp;&nbsp;&nbsp;Term &
+                        Conditon-Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

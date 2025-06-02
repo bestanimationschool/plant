@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Checkout Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-label {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .form-control {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .form-control::placeholder {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .form-select option {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .btn-form {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #178530;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        .btn-form:hover {
+            color: #178530;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px rgba(9, 5, 4, 0.5);
+        }
+
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="quantity" min="1" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Shipping Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter shipping address" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="payment" class="form-label">Payment Method</label>
+                <select class="form-select" id="payment" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank_transfer">Bank Transfer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-form">BUY NOW</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

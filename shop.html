@@ -1,0 +1,2010 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Varela+Round&display=swap');
+
+        .container-fluid {
+            max-width: 100% !important;
+            background-color: #e7f9e6 !important;
+        }
+
+        .container {
+            max-width: 1600px !important;
+        }
+
+        .navbar-brand img {
+            max-width: 150px !important;
+        }
+
+        .fixed-top {
+            top: -5px;
+        }
+
+        .nav-item a,
+        .dropdown-item {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #178530;
+        }
+
+        .nav-link {
+            margin: 0 14px;
+        }
+
+        .btn-success {
+            background: none;
+            border: none;
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #178530;
+            margin: 0 20px -7px 0;
+        }
+
+
+        .dropdown-menu.show {
+            margin-top: 20px;
+        }
+
+        .modal-content {
+            background-color: #ebf6e6;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            color: #fff;
+            background-color: #178530;
+        }
+
+        .login-btn,
+        .signup-btn {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #178530;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 20px;
+            transition: 0.4s;
+        }
+
+        .login-btn:hover,
+        .signup-btn:hover {
+            background-color: #fff;
+            color: #178530;
+            box-shadow: 0px 2px 5px rgba(9, 5, 4, 0.3);
+        }
+
+        .cart ul li {
+           list-style-type: none;
+           margin: 0 30px -6px 10px;
+        }
+
+        .cart i {
+            font-size: 22px;
+            color: #178530;
+        }
+
+        .nav-search input {
+            width: 350px;
+            height: auto;
+            padding: 3px 10px;
+            border: 2px solid #0b8728;
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-search input::placeholder {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .modal-header h1 {
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #178530;
+        }
+
+        .form-label {
+            font-family: "poppins", serif;
+            font-size: 17px;
+            font-weight: 500;
+            color: #178530;
+        }
+
+        .form-text,
+        .input-group-text {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .form-check-label {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #178530;
+        }
+
+        .plant-type h2 {
+            font-family: "poppins", serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        .plant-type ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .plant-type ul li a {
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #178530;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .plant-type ul li a:hover {
+            background-color: #178530;
+            color: #fff;
+            border-radius: 10px;
+            padding: 5px 8px;
+        }
+
+
+        .breadcrumb-item a,
+        .breadcrumb-item2,
+        .breadcrumb-item3 {
+            text-decoration: none;
+            color: #178530;
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            padding: 5px 10px;
+        }
+        .breadcrumb-item a {
+            color: #333;
+        }
+
+        .btn-all-plant-main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-all-plant {
+            width: 90%;
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 5px 5px;
+            background-color: #178530;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.4s;
+            text-align: center;
+        }
+        .btn-all-plant:hover {
+            background-color: #fff;
+            color: #178530;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        }
+        .card {
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card-title {
+            font-family: "poppins", serif;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #333;
+            text-align: center;
+        }
+
+        .card-text {
+            font-family: "poppins", serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: #8e8c8c;
+            text-align: center;
+        }
+
+        .card-text span {
+            color: #178530;
+        }
+
+        .star {
+            text-align: center;
+        }
+
+        .star i {
+            color: rgb(255 193 7)
+        }
+        .offer-deal-badge {
+            background: transparent;
+            color: #0b8728;
+            border: 2px solid #0b8728;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+
+        .list-group-item {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #178530;
+        }
+
+        .nav-link {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #333;
+            text-align: start;
+            text-transform: uppercase;
+        }
+
+        .active>.page-link,
+        .page-link.active {
+            z-index: 3;
+            color: #ffffff;
+            background-color: #2a9939;
+            border-color: #2a9939
+        }
+
+        .footer {
+            height: auto;
+            background-color: #333 !important;
+            padding: 50px 0 10px 0;
+        }
+
+        .footer p {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .footer h3 {
+            font-family: "poppins", serif;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .footer ul li {
+            list-style-type: none;
+        }
+
+        .footer ul li a {
+            font-family: "poppins", serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer h6 {
+            font-family: "poppins", serif;
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .footer span {
+            font-family: "poppins", serif;
+            font-size: 12px;
+            color: #ffffff;
+        }
+
+        .tooltip-custom {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 128, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            visibility: hidden;
+        }
+
+        .tooltip-custom img {
+            width: 50px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tooltip-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tooltipText {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        #tooltipPrice,
+        #tooltipTime {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        @media (max-width:600px) {
+            .tooltip-custom {
+                flex-direction: column;
+                align-items: center;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .tooltip-custom img {
+                width: 50px;
+                height: 50px;
+            }
+
+            #tooltipText {
+                font-size: 14px;
+            }
+
+            #tooltipPrice,
+            #tooltipTime {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .card-title {
+                font-size: 16px;
+            }
+
+            .btn-all-plant {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg shadow-lg fixed-top" style="background-color: #fff;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.webp" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 my-2">
+                        <li class="nav-item dropdown">
+                           
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="indoor-plant.html">Indoor Plants</a></li>
+                                <li><a class="dropdown-item" href="flowring.html">Flowring Plants</a></li>
+                                <li><a class="dropdown-item" href="low-main.html">Low Maintenence Plants</a></li>
+                                <li><a class="dropdown-item" href="air-pure.html">Air Purifying Plants</a></li>
+                                <li><a class="dropdown-item" href="low-light.html">Low Light Plants</a></li>
+                                <li><a class="dropdown-item" href="cacti.html">Cacti ANd Sacculents</a></li>
+                                <li><a class="dropdown-item" href="hanging.html">Hanging Plants</a></li>
+                                <li><a class="dropdown-item" href="pet-friently.html">Pet Freindly Plants</a></li>
+                                <li><a class="dropdown-item" href="fruit.html">Fruit plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Seeds
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="flower-seed.html">flowers seed</a></li>
+                                <li><a class="dropdown-item" href="vegetable.html">vegetables seeds</a></li>
+                                <li><a class="dropdown-item" href="microgreen.html">microgreen seeds </a></li>
+                                <li><a class="dropdown-item" href="herbs-seed.html">herbs seeds</a></li>
+                                <li><a class="dropdown-item" href="grace.html">tree and grace seeds</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                pots & planters
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="plasticpot.html">Plastic pots</a></li>
+                                <li><a class="dropdown-item" href="ceramic.html">ceramic pots</a></li>
+                                <li><a class="dropdown-item" href="metalpot.html">metal planters</a></li>
+                                <li><a class="dropdown-item" href="wooden.html">wooden planters</a></li>
+                                <li><a class="dropdown-item" href="plantstand.html">plant stands</a></li>
+                                <li><a class="dropdown-item" href="seedling.html">seedling trays</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                plants care
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gardentool.html">garden tools</a></li>
+                                <li><a class="dropdown-item" href="accerceries.html">watering tools & accerssories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-success" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Login&nbsp;<i class="bi bi-person-circle"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Login</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">Sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <ul class="p-0 m-0 ">
+                            <li class="mr-1"><a href="cart.html"><i class="bi bi-cart-fill"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 my-3" type="search"
+                                placeholder="Search for plants, seeds and planters ..." aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col p-0">
+                    <img src="images/all-plant-banner.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid types bg-light g-0 mt-2">
+            <div class="container g-0">
+                <div class="row d-lg-none bg-white border text-center py-2 g-0">
+                    <div class="col">
+                        <div class="btn fs-3 fw-semibold" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"
+                            aria-controls="offcanvasBottom"><svg width="30" height="30" viewBox="0 0 256 256">
+                                <path fill="none" d="M0 0h256v256H0z"></path>
+                                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="12" d="m144 168 40 40 40-40M184 112v96M48 128h72M48 64h136M48 192h56">
+                                </path>
+                            </svg>Sort</div>
+                    </div>
+                    <div class="col border-start">
+                        <div class="btn fs-3 fw-semibold" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"
+                            aria-controls="staticBackdrop"><svg width="30" height="30" viewBox="0 0 256 256">
+                                <path fill="none" d="M0 0h256v256H0z"></path>
+                                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="12" d="M148 172H40M216 172h-28"></path>
+                                <circle cx="168" cy="172" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="12"></circle>
+                                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="12" d="M84 84H40M216 84h-92"></path>
+                                <circle cx="104" cy="84" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="12"></circle>
+                            </svg>Filter</div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-2 d-none d-lg-block">
+                        <div class=" row bg-white shadow py-2 rounded">
+                            <div class="col">
+                                <div class="card fil-card my-2">
+                                    <img src="images/all-plant-right-pic.webp" card-img-top object-fit-contain alt="..."
+                                        style="height: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><small>air purifying P. bundle</small></h5>
+                                        <p class="card-text"><small>Under ₹1499 + Extra 15% Off</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg-white shadow py-2 mt-2 rounded">
+                            <div class="col">
+                                <div class="plant-type">
+                                    <h2>plants</h2>
+                                    <ul>
+                                        <li><a href="indoor-plant.html">Indoor Plants</a></li>
+                                        <li><a href="flowring.html">Flowring Plants</a></li>
+                                        <li><a href="low-main.html">Low Maintenence</a></li>
+                                        <li><a href="air-pure.html">Air Purifying Plants</a></li>
+                                        <li><a href="low-light.html">Low Light Plants</a></li>
+                                        <li><a href="cacti.html">Cacti and Sacculents</a></li>
+                                        <li><a href="hanging.html">Hanging Plants</a></li>
+                                        <li><a href="pet-friently.html">Pet Freindly Plants</a></li>
+                                        <li><a href="fruit.html">Fruit plants</a></li>
+                                        <!--<li><a href="">Bundles</a></li>
+                                        <li><a href="">Shop by location</a></li>
+                                        <li><a href="">subscription</a></li>-->
+                                    </ul>
+                                    <h2>seeds</h2>
+                                    <ul>
+                                        <li><a href="flower-seed.html">flowers seed</a></li>
+                                        <li><a href="vegetable.html">vegetables seeds</a></li>
+                                        <li><a href="microgreen.html">microgreen seeds</a></li>
+                                        <li><a href="herbs-seed.html">herbs seeds</a></li>
+                                        <li><a href="grace.html">tree and grace seeds</a></li>
+                                    </ul>
+                                    <h2>pots and planters</h2>
+                                    <ul>
+                                        <li><a href="plasticpot.html">Plastic pots</a></li>
+                                        <li><a href="ceramic.html">ceramic pots</a></li>
+                                        <li><a href="metalpot.html">metal planters</a></li>
+                                        <li><a href="wooden.html">wooden planters</a></li>
+                                        <li><a href="plantstand.html">plant stands</a></li>
+                                        <li><a href="seedling.html">seedling trays</a></li>
+                                    </ul>
+                                    <h2>plant care</h2>
+                                    <ul>
+                                        <li><a href="gardentool.html">garden tools</a></li>
+                                        <li><a href="accerceries.html">watering tools</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-10">
+                        <div class="bg-white shadow mb-2 rounded">
+                            <div class="row">
+                                <div class="col d-none d-lg-block">
+                                    <p class="text-body-secondary lh-sm">
+                                        <small>
+                                            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                                                aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a href="#">all plants</a></li>
+                                                    <li class="breadcrumb-item2">.plants bring stunning & vibrant
+                                                        aesthetics along with a wide array of benefits to any space.
+                                                        Elevate your living or office space with a variety of indoor
+                                                        house plants grown and treated with utmost care just for you!
+                                                    </li>
+                                                    <li class="breadcrumb-item3"> >820 product</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 row-cols-lg-4 g-0 g-md-2">
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">18% off</span>
+                                    <img src="images/all-plant-1.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">brazilian wood p</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 499</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">Trending</span>
+                                    <img src="images/all-plant-2.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Peace Lily p</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 599</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">13% off</span>
+                                    <img src="images/all-plant-3.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bamboo Palm p</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 299</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">15% off</span>
+                                    <img src="images/all-plant-4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jade Mini-P</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 399</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">19% off</span>
+                                    <img src="images/all-plant-5.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ixora rugmini Pink p</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 899</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">33% off</span>
+                                    <img src="images/all-plant-6.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bird Of Paradise plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 999</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">17% off</span>
+                                    <img src="images/all-plant-7.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kalanchoe Yellow</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 359</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">21% off</span>
+                                    <img src="images/all-plant-8.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Poinsettia Red Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 649</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">11% off</span>
+                                    <img src="images/all-plant-9.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The China Doll Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 449</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">23% off</span>
+                                    <img src="images/all-plant-10.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Peperomia Green Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 699</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">14% off</span>
+                                    <img src="images/all-plant-11.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aglaonema Red Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 499</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">9% off</span>
+                                    <img src="images/all-plant-12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Money Variegated</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 199</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">Best Seller</span>
+                                    <img src="images/cacti-img-2.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Snake Plant - Golden</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 599</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">13% off</span>
+                                    <img src="images/cacti-img-3.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trailing Jade With H Pot</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 299</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">15% off</span>
+                                    <img src="images/cacti-img-4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Earth Star Plant - Pink</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 399</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">19% off</span>
+                                    <img src="images/cacti-img-5.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Echeveria Hybrid Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 899</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">33% off</span>
+                                    <img src="images/cacti-img-6.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Snake Plant - Futura</h5>
+                                        <p class="card-text m-0"><del>&#8377 599</del> <Span>from
+                                                &#8377 299</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">17% off</span>
+                                    <img src="images/cacti-img-7.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cactus Elongated</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 359</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">21% off</span>
+                                    <img src="images/cacti-img-8.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Golden Sedum Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 649</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">11% off</span>
+                                    <img src="images/cacti-img-9.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aloe Vera Mini Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 449</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">23% off</span>
+                                    <img src="images/cacti-img-10.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Snake Plant - Green</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 699</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">14% off</span>
+                                    <img src="images/cacti-img-11.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Heart Hoya Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 499</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">9% off</span>
+                                    <img src="images/cacti-img-12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chrstmas Cactus</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 199</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">23% off</span>
+                                    <img src="images/cacti-img-10.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Snake Plant - Green</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 699</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">18% off</span>
+                                    <img src="images/hanging-img-1.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Money Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 999</del> <Span>from
+                                                &#8377 499</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">Best Seller</span>
+                                    <img src="images/hanging-img-2.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Broken Heart</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 599</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">13% off</span>
+                                    <img src="images/hanging-img-3.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trailing Jade</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 299</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">15% off</span>
+                                    <img src="images/hanging-img-4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wandering Jew</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 399</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">19% off</span>
+                                    <img src="images/hanging-img-5.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Philodendron Oxycar</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 899</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">33% off</span>
+                                    <img src="images/hanging-img-6.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spider Plant</h5>
+                                        <p class="card-text m-0"><del>&#8377 599</del> <Span>from
+                                                &#8377 299</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">17% off</span>
+                                    <img src="images/hanging-img-7.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">English Variegated </h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 359</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">21% off</span>
+                                    <img src="images/hanging-img-8.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Philodendron Golden</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 649</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">11% off</span>
+                                    <img src="images/hanging-img-9.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Peper Green Creeper</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 449</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">23% off</span>
+                                    <img src="images/hanging-img-10.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Money Golden</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 699</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">14% off</span>
+                                    <img src="images/hanging-img-11.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Peperomia Varie</h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 499</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <span class="offer-deal-badge">9% off</span>
+                                    <img src="images/hanging-img-12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Philodendron Oxyca </h5>
+                                        <p class="card-text m-0"><del>&#8377 1999</del> <Span>from
+                                                &#8377 199</Span></p>
+                                        <div class="star mb-3">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i><br>
+                                        </div>
+                                        <div class="btn-all-plant-main">
+                                            <a href="#" class="btn-all-plant">add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-lg justify-content-center my-3">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <div class="container-fluid footer d-flex align-items-center text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 text-center text-lg-start">
+                        <img src="images/logo-white.png" alt="">
+                        <p class="my-4">Transform your outdoor space with our expert garden services! From design to
+                            maintenance, we
+                            create beautiful, thriving gardens tailored to your vision. Let us bring your dream garden
+                            to life—professional, reliable, and passionate about nature.</p>
+                        <a href="#"><img src="images/whatsapp.png" alt=""></a>
+                        <a href="#"><img src="images/Instagram.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="col-12 offset-lg-1 col-md text-center text-md-start">
+                        <h3>Company</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">services</a></li>
+                            <li><a href="">Project</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3>Our Services</h3>
+                        <ul class="p-0 mt-4">
+                            <li><a href="">Garden</a></li>
+                            <li><a href="">Garden Mentanences</a></li>
+                            <li><a href="">Planting Services</a></li>
+                            <li><a href="">Tree Care</a></li>
+                            <li><a href="">Irrigation Services</a></li>
+                            <li><a href="">Speciality Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-start">
+                        <h3><i class="bi bi-stopwatch"></i>&nbsp;&nbsp;We're Open</h3>
+                        <h6>Monday to Friday 08.00-04.00</h6>
+                        <h3><i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Office Location</h3>
+                        <h6>100 S Main St, New York, NY</h6>
+                        <h3><i class="bi bi-envelope"></i>&nbsp;&nbsp;Send a Message</h3>
+                        <h6>contact@gardyn.com</h6>
+                    </div>
+                    <hr class="my-4">
+                    <span class="text-center">Copyright 2024 - Gardyn by Designesia&nbsp;&nbsp;&nbsp;Term &
+                        Conditon-Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="liginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a href=""><button type="submit" class="login-btn">Submit</button></a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign-up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">First and last name</span>
+                            <input type="text" aria-label="First name" class="form-control">
+                            <input type="text" aria-label="Last name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="signup-btn">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--off-canvas sort-->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">SORT BY</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small p-0">
+            <ul class="list-group">
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Best Selling
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Alphabetically A-Z
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Alphabetically Z-A
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Prize Low to High
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Prize High to Low
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Date old to new
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                    Date new to old
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--off-canvas filter-->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active m-0" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">tipe of plant</button>
+                    <button class="nav-link m-0" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">prize</button>
+                    <button class="nav-link m-0" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">light</button>
+                    <button class="nav-link m-0" id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false">ideal plant location</button>
+                    <button class="nav-link m-0" id="v-pills-special-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-special" type="button" role="tab" aria-controls="v-pills-special"
+                        aria-selected="false">indoor/outdoor</button>
+                    <button class="nav-link m-0" id="v-pills-above-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-above" type="button" role="tab" aria-controls="v-pills-above"
+                        aria-selected="false">maintainence</button>
+                    <button class="nav-link m-0" id="v-pills-sizes-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-sizes" type="button" role="tab" aria-controls="v-pills-sizes"
+                        aria-selected="false"> pot Size</button>
+                    <button class="nav-link m-0" id="v-pills-black-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-black" type="button" role="tab" aria-controls="v-pills-occasionally"
+                        aria-selected="false">water schedule</button>
+                    <button class="nav-link m-0" id="v-pills-greece-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-greece" type="button" role="tab" aria-controls="v-pills-occasionally"
+                        aria-selected="false">color</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Air Plant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Cacti & Succulents
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Creepers/Groundcovers
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Flowering Plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Focal Plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Hanging Basket Plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Screen Plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Shrub Plants
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                From &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8377 0
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8377 2249
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Bright Indirect Light
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Direct Sunlight
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Low Light
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Office Desk Plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Office premises plants
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Plants For Living Room Tables
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Plants For Shaded Balconies
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Plants For Sunny Balconies
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Windowsill Plants
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-special" role="tabpanel"
+                        aria-labelledby="v-pills-special-tab" tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Indoor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Outdoor Shade Loving Plant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Outdoor Sun Loving Plant
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-above" role="tabpanel" aria-labelledby="v-pills-above-tab"
+                        tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Low
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Medium
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-sizes" role="tabpanel" aria-labelledby="v-pills-sizes-tab"
+                        tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                small
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                medium
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                large
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-black" role="tabpanel" aria-labelledby="v-pills-black-tab"
+                        tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Every alternate day
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Once a day
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Once a week
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Twice a week
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-greece" role="tabpanel" aria-labelledby="v-pills-greece-tab"
+                        tabindex="0">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Ivory
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                light green
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                light grey
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Midnight Blue
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                mint
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                mocca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                pastle blue
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Peach
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                pink
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                red
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                sky blue
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                teal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Turquoise Blue
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                white
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                yellow
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Eggshell White
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                grey
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                dusty rose
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Cloud Grey
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                cadet grey
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                brown
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                blue
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                black
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
